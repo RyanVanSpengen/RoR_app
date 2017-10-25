@@ -7,12 +7,6 @@ class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
   fixtures :all
   include ApplicationHelper
-<<<<<<< HEAD
-
-  def is_logged_in?
-    !session[:user_id].nil?
-  end
-=======
   
   #Returns true if the user is logged in
   def is_logged_in?
@@ -32,7 +26,6 @@ class ActiveSupport::TestCase
     end
   end
   
->>>>>>> advanced-login
 
   # Add more helper methods to be used by all tests here...
 end
