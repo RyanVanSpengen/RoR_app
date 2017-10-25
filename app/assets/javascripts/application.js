@@ -14,4 +14,8 @@
 //= require turbolinks
 //= require_tree .
 //= require jquery
+<<<<<<< HEAD
 //= require bootstrap
+=======
+//= require bootstrap
+>>>>>>> basic-login

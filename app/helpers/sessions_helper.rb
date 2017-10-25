@@ -1,8 +1,13 @@
 module SessionsHelper
+<<<<<<< HEAD
+=======
+  
+>>>>>>> basic-login
   def log_in(user)
     session[:user_id] = user.id
   end
   
+<<<<<<< HEAD
     # Returns the current logged-in user (if any).
   def current_user
     @current_user ||= User.find_by(id: session[:user_id])
@@ -19,3 +24,21 @@ module SessionsHelper
     @current_user = nil
   end
 end
+=======
+  #Remove user from the session
+  def log_out
+    session.delete(:user_id)
+    current_user = nil
+  end
+  
+  #Returns the current logged is user if any
+  def current_user
+    @current_user || User.find_by(id: session[:user_id])
+  end
+  
+  def logged_in?
+    !current_user.nil?
+  end
+    
+end
+>>>>>>> basic-login
