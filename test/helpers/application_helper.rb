@@ -11,4 +11,5 @@ class ApplicatonHelperTest < ActionView::TestCase
     assert_same full_title("Contact"), "Contact | #{title_text}"
     assert_same full_title("Help"), "Help | #{title_text}"
     assert_same full_title("About"), "About | #{title_text}"
+    assert_same full_title("Log In"), "Log In | #{title_text}"
   end
