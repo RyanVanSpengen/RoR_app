@@ -22,7 +22,7 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
     @user = users(:michael)
     get login_path
     post login_path, params: { session: { email:    @user.email,
-                                          password: 'testing' } }
+                                          password: 'password' } }
     assert is_logged_in?                               
     assert_redirected_to @user
     follow_redirect!

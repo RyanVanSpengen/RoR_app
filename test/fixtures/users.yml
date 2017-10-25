@@ -1,9 +1,4 @@
 michael:
   name: Michael Example
-<<<<<<< HEAD
   email: michael@example.com
   password_digest: <%= User.digest('password') %>
-=======
-  email: t3@t3.com
-  password_digest: <%= User.digest('testing') %>
->>>>>>> basic-login
