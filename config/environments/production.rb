@@ -102,4 +102,5 @@ Rails.application.configure do
     :domain         => 'heroku.com',
     :enable_starttls_auto => true
   }
+  require 'carrierwave/orm/activerecord'
 end
